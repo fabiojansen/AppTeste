@@ -1,0 +1,13 @@
+﻿@model AppTeste.Models.Funcionario
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>Nome: @Model.Nome</p>
+<p>Matrícula: @Model.Matricula</p>
+<br/>
+<p>Contracheque: @Html.ActionLink("Ver Contracheque", "VerContracheque", "Funcionario", new { target = "_blank" })</p>
+
